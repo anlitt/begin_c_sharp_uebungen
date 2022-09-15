@@ -13,17 +13,12 @@ namespace uebungen_c_sharp_150922
         {
             Console.WriteLine("Bitte nenne mir Text");
             string entry = Console.ReadLine();
-            string wahr = "abc";
-            bool contains = entry.Contains(wahr);
-            if (contains)
-            {
-                Console.WriteLine("true");
-            }
-            else
-            {
-                Console.WriteLine("False.Try again");
-            }
-            Console.WriteLine("Danke für deine Teilnahme");
+           
+            string neu = entry.ToUpper();
+            Console.WriteLine("dein neuer Text ist " + neu);
+
+            
+
 
           
 
