@@ -10,14 +10,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte nenne mir eine Kommazahl");
+            Console.WriteLine("Bitte nenne mir einen Text mit weniger als zwanzig Zeichen du Vollidiot");
+            string entry = Console.ReadLine();
+            string replaced_entry = entry.PadLeft(20,'y');
+            Console.WriteLine(replaced_entry);
 
-            double Zahl1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Bitte nenne mir eine zweite Kommazahl");
-            double Zahl2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ich danke dir");
-            double Ergebnis = Zahl1 + Zahl2;
-            Console.WriteLine("Ich kann dir sagen,dass " + Zahl1 + " und " + Zahl2 + " insgesamt " + Ergebnis + " ergibt.");
+
 
             
 
