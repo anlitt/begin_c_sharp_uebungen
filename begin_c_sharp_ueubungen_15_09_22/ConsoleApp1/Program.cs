@@ -10,10 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte nenne mir einen Text mit weniger als zwanzig Zeichen du Vollidiot");
+            Console.WriteLine("Bitte nenne mir einen Text mit weniger als dreißig Zeichen du Vollidiot");
             string entry = Console.ReadLine();
-            string replaced_entry = entry.PadLeft(20,'y');
-            Console.WriteLine(replaced_entry);
+            Console.WriteLine("Das ist dein Originaleintrag: " + entry);
+            string replaced_entry = entry.PadRight(30,'y');
+            Console.WriteLine("Das ist dein aufgefüllter Text: " + replaced_entry);
 
 
 
