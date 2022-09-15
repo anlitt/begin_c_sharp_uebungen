@@ -11,12 +11,13 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            int x = 0;
-            for(int i=0;i<=20; i++)
+            Console.WriteLine("Bitte nenne mir eine Zahl");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ich werde nun rückwärts zählen");
+            while (age > 0)
             {
-                int sum = x + i;
-                Console.WriteLine(x + "+" + i +" ist gleich" + sum);
-                x = sum;
+                age--;
+                Console.WriteLine(age);
             }
 
             Console.ReadLine();
