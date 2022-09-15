@@ -10,12 +10,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte nenne mir einen Text, bei dem vor und nach dem Text Leerzeichen eingebaut sind");
+            Console.WriteLine("Bitte nenne mir einen Text mit Semicolons");
             string entry = Console.ReadLine();
             Console.WriteLine("Das ist dein Originaltext: " + entry);
-            string ohne_leerzeichen = entry.Trim(' ');
-            Console.WriteLine("Hier ist dein Text ohne Leerzeichen. Ich hoffe du bist jetzt glücklich!!");
-            Console.WriteLine(ohne_leerzeichen);
+            string[]teilung = entry.Split(';');
+            foreach (string teil in teilung)
+            {
+                Console.WriteLine(teil);
+            }
+
+
+
+
+            
             
 
 
