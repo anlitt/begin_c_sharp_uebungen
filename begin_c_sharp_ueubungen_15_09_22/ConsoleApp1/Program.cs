@@ -10,13 +10,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welche Zahl möchtest du addieren? ");
-            int Zahl1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Mit welcher Zahl möchtest du diese erste Zahl addieren?");
-            int Zahl2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Das Ergebnis ist:");
-            int Ergebnis = Zahl1 + Zahl2;
-            Console.WriteLine(Ergebnis);
+            Console.WriteLine("Bitte gebe mir einen Text deiner Wahl");
+            string entry = Console.ReadLine();
+            string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
+            Console.WriteLine("Dein geänderter Text ist:");
+            Console.WriteLine(replaced_entry);
+
             
 
             Console.ReadLine();
