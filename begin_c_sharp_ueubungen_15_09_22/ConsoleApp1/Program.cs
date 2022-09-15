@@ -11,13 +11,20 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte nenne mir eine Zahl");
-            int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ich werde nun rückwärts zählen");
-            while (age > 0)
+            string trainees = "jonasb,phillip,marcello,andreas,robin,robert,marie,leon,erwin,jan,mona,lukas";
+            Console.WriteLine(trainees);
+            Console.WriteLine("Und hier die geteilte Liste:");
+            string[] teilung = trainees.Split(',');
+            foreach (string trainee in teilung)
             {
-                age--;
-                Console.WriteLine(age);
+                string wahr = "e";
+                bool contains = trainee.Contains(wahr);
+                if (contains)
+                {
+                    Console.WriteLine(trainee);
+                }
+
+            
             }
 
             Console.ReadLine();
