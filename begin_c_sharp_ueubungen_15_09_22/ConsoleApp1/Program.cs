@@ -15,10 +15,12 @@ namespace uebungen_c_sharp_150922
             Console.WriteLine(trainees);
             Console.WriteLine("Und hier die geteilte Liste:");
             string[] teilung = trainees.Split(',');
+            Console.WriteLine("Bitte gebe mir einen Buchstaben, der herausgefiltert werden soll");
+            string Buchstabe = Console.ReadLine();
+
             foreach (string trainee in teilung)
             {
-                string wahr = "e";
-                bool contains = trainee.Contains(wahr);
+                bool contains = trainee.Contains(Buchstabe);
                 if (contains)
                 {
                     Console.WriteLine(trainee);
