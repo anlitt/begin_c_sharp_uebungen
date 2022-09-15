@@ -11,25 +11,13 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte nenne mir Text");
-            string entry = Console.ReadLine();
-           
-            string neu = entry.ToUpper();
-            Console.WriteLine("dein neuer Text ist " + neu);
-
-            
-
-
-          
-
-
-
-            
-            
-
-
-
-            
+            int x = 0;
+            for(int i=0;i<=20; i++)
+            {
+                int sum = x + i;
+                Console.WriteLine(x + "+" + i +" ist gleich" + sum);
+                x = sum;
+            }
 
             Console.ReadLine();
         }
