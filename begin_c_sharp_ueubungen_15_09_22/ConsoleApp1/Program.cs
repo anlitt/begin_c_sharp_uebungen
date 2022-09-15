@@ -11,25 +11,31 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            string trainees = "jonasb,phillip,marcello,andreas,robin,robert,marie,leon,erwin,jan,mona,lukas";
-            Console.WriteLine(trainees);
-            Console.WriteLine("Und hier die geteilte Liste:");
-            string[] teilung = trainees.Split(',');
-            Console.WriteLine("Bitte gebe mir einen Buchstaben, der herausgefiltert werden soll");
-            string Buchstabe = Console.ReadLine();
-
-            foreach (string trainee in teilung)
+            Random r = new Random();
+            int random_zahl = r.Next(0, 100);
+            Console.WriteLine("Bitte gebe mir eine Nummer zwischen 0 und hundert");
+            while (true)
             {
-                bool contains = trainee.Contains(Buchstabe);
-                if (contains)
+                int Benutzerzahl = Convert.ToInt32(Console.ReadLine());
+                if (Benutzerzahl == random_zahl)
                 {
-                    Console.WriteLine(trainee);
+                    Console.WriteLine("Glückwunsch.Du hast gewonnen");
+                    break;
+
                 }
-
-            
+                else if (Benutzerzahl < random_zahl)
+                {
+                    Console.WriteLine("Die Zahl ist groesser als deine Zahl. Try again");
+                }
+                else if (Benutzerzahl > random_zahl)
+                {
+                    Console.WriteLine("Die Zahl ist kleiner als deine Zahl.Try again");
+                }
             }
+                
 
-            Console.ReadLine();
+                Console.ReadLine();
+
         }
     }
 }
