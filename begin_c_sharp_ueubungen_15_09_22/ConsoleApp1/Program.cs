@@ -11,31 +11,30 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            Random r = new Random();
-            int random_zahl = r.Next(0, 100);
-            Console.WriteLine("Bitte gebe mir eine Nummer zwischen 0 und hundert");
-            while (true)
+            //array hat 5 stellen aber keine Zahlen dafür definiert, daher alle 0
+            int[] zahlen = new int[5];
+
+            //in dem array befinden sich die Zahlen 26, 8, 12, 3 und 6. Also nicht definiert wie viele Zahlen sonder vor allem welche
+            int[] zahlen2 = new int[] { 26, 8, 12, 3, 6 };
+            for (int i = 0; i < zahlen.Length; i++)
             {
-                int Benutzerzahl = Convert.ToInt32(Console.ReadLine());
-                if (Benutzerzahl == random_zahl)
-                {
-                    Console.WriteLine("Glückwunsch.Du hast gewonnen");
-                    break;
-
-                }
-                else if (Benutzerzahl < random_zahl)
-                {
-                    Console.WriteLine("Die Zahl ist groesser als deine Zahl. Try again");
-                }
-                else if (Benutzerzahl > random_zahl)
-                {
-                    Console.WriteLine("Die Zahl ist kleiner als deine Zahl.Try again");
-                }
+                Console.WriteLine("Gebe mir eine Zahl für das Array!");
+                zahlen[i] = Convert.ToInt32(Console.ReadLine());
             }
-                
-
-                Console.ReadLine();
+            Console.Write("[");
+            for (int i = 0; i < zahlen2.Length; i++)
+            {
+                Console.Write($" {zahlen[i]} / ");
+            }
+            Console.Write("]");
+            Console.ReadLine();
 
         }
+
+
+
+
+
     }
-}
+    }
+
