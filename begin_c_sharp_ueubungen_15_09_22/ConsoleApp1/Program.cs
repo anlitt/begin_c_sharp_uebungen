@@ -12,49 +12,23 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            //taschenrechner
-            Console.WriteLine("Bitte gebe mir eine Zahl");
-            double zahl1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Bitte gib mir noch eine zweite Zahl");
-            double zahl2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Was willst du machen ?");
-            string op = Console.ReadLine();
-            double ergebnis = 0;
-            //wenn nicht vor switch definieren, dann in einzelnen cases definieren, aber dann muss man das Ergebnis jedes Mal anders benennen z.B.: ergebnis; ergebnis1;etc
-            switch (op)
-            {
-                case "+":
-                     ergebnis = zahl1 + zahl2;
-                    Console.WriteLine("Dein Ergebnis ist " + ergebnis);
-                    break;
-                case "-":
-                     ergebnis = zahl1 - zahl2;
-                    Console.WriteLine("Dein Ergebnis ist " + ergebnis);
-                    break;
-                case "*":
-                    ergebnis = zahl1 * zahl2;
-                    Console.WriteLine("Dein Ergebnis ist " + ergebnis);
-                    break;
-                case "/":
-                    ergebnis = zahl1 / zahl2;
-                    Console.WriteLine("Dein Ergebnis ist " + ergebnis);
-                    break;
-                case "%":
-                    ergebnis = zahl1 % zahl2;
-                    Console.WriteLine("Dein Ergebnis ist " + ergebnis);
-                    break;  
-            }
-            Console.WriteLine("Ich hoffe ich konnte dir helfen. ;)");
+            List<int> numbers = new List<int>();
+            List<string> namen = new List<string>();
+
+            namen.Add("Andi");
+            namen.Add("Rudolf");
+            namen.Add(Console.ReadLine());
+            //trägt eingabe direkt in die liste namen ein
+            
+            
+
+
+
             Console.ReadLine();
-            }   
-                
-
         }
-
-
+        
 
 
 
     }
-    
-
+}
