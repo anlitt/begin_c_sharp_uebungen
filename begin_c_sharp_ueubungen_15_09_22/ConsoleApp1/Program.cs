@@ -14,39 +14,42 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            //aufgabe 2
-            List<int> liste_1 = new List<int>() { 5,3,7};
-            Console.WriteLine("Möchtest du weitere Zahlen hinzufügen?");
-            int eingabe2 = 0;
-            string eingabe = " ";
-            while(true)
+            //casino aufgaben
+            Random k = new Random();
+            int Zufallszahl = k.Next(0, 36);
+            int Rundenzahl = 0;
+            Console.WriteLine("Mein Freund, du startest mit 10,000 Dollar");
+            while (true)
             {
-                Console.WriteLine("nenne mir eine Zahl, die ich der Liste hinzufügen soll. Wenn keine Zahl hinzugefügt werden soll, drücke Leertaste und dann enter");
-                eingabe = Console.ReadLine();
-                if (eingabe == " ")
+                int Guthaben = 10000;
+                foreach (
                 {
-                    Console.WriteLine("keine weiteren Zahlen werden der Liste hinzugefügt. Abbruch");
-                    break;
-                }
-                else
-                {
-                    eingabe2 = Convert.ToInt32(eingabe);
-                    liste_1.Add(eingabe2);
-                    Console.WriteLine(eingabe2 + " wird deiner Liste hinzugefügt");
+                
+                    if (Guthaben >= 10000)
+                    {
+                        Console.WriteLine("Du musst 10 Euro setzen");
+                        Guthaben = Guthaben - 10;
+                        if (Zufallszahl % 2 == 0)
+                        {
+                            Console.WriteLine("Herzlichen Glückwunsch du hast gewonnen");
+                            Guthaben = Guthaben + 20;
+
+
+                        }
+                    }
+                
                     
                 }
+            }
+                
+
                 
             }
-            liste_1.Insert(1, 99);
-            List<int> liste_2 = new List<int>() { 91, 92, 93};
-            liste_1.AddRange(liste_2);
-            liste_1.RemoveAt(0);
-            liste_1.Remove(99);
-            foreach (int i in liste_1)
-            {
-                Console.WriteLine(i);
-               
-            }
+            
+
+            
+            
+            
             Console.ReadLine();
 
 
