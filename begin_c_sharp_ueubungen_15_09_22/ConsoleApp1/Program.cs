@@ -20,6 +20,7 @@ namespace uebungen_c_sharp_150922
             Console.WriteLine("Was willst du machen ?");
             string op = Console.ReadLine();
             double ergebnis = 0;
+            //wenn nicht vor switch definieren, dann in einzelnen cases definieren, aber dann muss man das Ergebnis jedes Mal anders benennen z.B.: ergebnis; ergebnis1;etc
             switch (op)
             {
                 case "+":
