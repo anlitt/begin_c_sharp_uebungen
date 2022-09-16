@@ -38,7 +38,7 @@ namespace uebungen_c_sharp_150922
                         Console.WriteLine("Das Ergebnis ist " + ergebnis1);
                         break;
                     case "/":
-                        int ergebnis2 = Division(zahl1, zahl2);
+                        double ergebnis2 = Division(zahl1, zahl2);
                         Console.WriteLine("Das Ergebnis ist " + ergebnis2);
                         break;
                 }
@@ -64,9 +64,9 @@ namespace uebungen_c_sharp_150922
             int produkt = z1 * z2;
             return produkt;
         }
-        static int Division(int z1, int z2)
+        static double Division(double z1, double z2)
         {
-            int quotient = z1/ z2;
+            double quotient = z1/ z2;
             return quotient;
         }
         //static Rückgabentyp MethodenName (parameter)
