@@ -38,6 +38,8 @@ namespace uebungen_c_sharp_150922
                 
             }
             liste_1.Insert(1, 99);
+            List<int> liste_2 = new List<int>() { 91, 92, 93};
+            liste_1.AddRange(liste_2);
             foreach (int i in liste_1)
             {
                 Console.WriteLine(i);
