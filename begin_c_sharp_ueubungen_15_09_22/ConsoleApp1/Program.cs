@@ -37,6 +37,7 @@ namespace uebungen_c_sharp_150922
                 }
                 
             }
+            liste_1.Insert(1, 99);
             foreach (int i in liste_1)
             {
                 Console.WriteLine(i);
