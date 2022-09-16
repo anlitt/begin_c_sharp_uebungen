@@ -12,13 +12,22 @@ namespace uebungen_c_sharp_150922
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int>();
             List<string> namen = new List<string>();
-
-            namen.Add("Andi");
-            namen.Add("Rudolf");
-            namen.Add(Console.ReadLine());
-            //trägt eingabe direkt in die liste namen ein
+            
+            Console.WriteLine("wie viele Namen möchtest du eintragen?");
+            int anzahl = Convert.ToInt32(Console.ReadLine());
+            for(int i=0; i<anzahl; i++)
+            {
+                Console.WriteLine("Gib einen Namen ein");
+                namen.Add(Console.ReadLine());
+             
+            }
+            Console.WriteLine("Deine Liste besteht aus folgenden Namen: ");   
+            foreach (string name in namen)
+            {
+                Console.WriteLine(name);
+            }
+            Console.WriteLine("Ich hoffe ich konnte dir helfen");   
             
             
 
