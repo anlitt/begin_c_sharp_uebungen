@@ -33,20 +33,18 @@ namespace uebungen_c_sharp_150922
                     eingabe2 = Convert.ToInt32(eingabe);
                     liste_1.Add(eingabe2);
                     Console.WriteLine(eingabe2 + " wird deiner Liste hinzugefügt");
-
+                    
                 }
-
+                
             }
-
-
-
-
+            foreach (int i in liste_1)
             {
-
+                Console.WriteLine(i);
+               
             }
-            {
+            Console.ReadLine();
 
-            }
+
 
 
             
